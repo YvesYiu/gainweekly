@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "cross-env NODE_ENV=development next dev",
     "build": "next build",
     "start": "next start"
   },
@@ -13,8 +13,13 @@
     "react-dom": "17.0.1"
   },
   "devDependencies": {
-    "postcss-flexbugs-fixes": "^5.0.0",
-    "postcss-preset-env": "^6.7.0",
-    "tailwindcss": "^1.9.6"
+    "@zeit/next-css": "1.0.1",
+    "autoprefixer": "9.8.6",
+    "cross-env": "7.0.2",
+    "postcss": "8.1.6",
+    "postcss-flexbugs-fixes": "5.0.0",
+    "postcss-preset-env": "6.7.0",
+    "tailwindcss": "1.9.6",
+    "webpack": "4.44.2"
   }
 }
